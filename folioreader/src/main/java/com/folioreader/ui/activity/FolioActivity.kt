@@ -362,7 +362,7 @@ class FolioActivity : AppCompatActivity(), FolioActivityCallback, MediaControlle
         menuInflater.inflate(R.menu.menu_main, menu)
 
         val config = AppUtil.getSavedConfig(applicationContext)!!
-        UiUtil.setColorIntToDrawable(config.themeColor, menu.findItem(R.id.itemSearch).icon)
+//        UiUtil.setColorIntToDrawable(config.themeColor, menu.findItem(R.id.itemSearch).icon)
         UiUtil.setColorIntToDrawable(config.themeColor, menu.findItem(R.id.itemConfig).icon)
         UiUtil.setColorIntToDrawable(config.themeColor, menu.findItem(R.id.itemTts).icon)
 
@@ -382,19 +382,19 @@ class FolioActivity : AppCompatActivity(), FolioActivityCallback, MediaControlle
             startContentHighlightActivity()
             return true
 
-        } else if (itemId == R.id.itemSearch) {
+        } /*(else if (itemId == R.id.itemSearch) {
             Log.v(LOG_TAG, "-> onOptionsItemSelected -> " + item.title)
             if (searchUri == null)
                 return true
-            val intent = Intent(this, SearchActivity::class.java)
-            intent.putExtra(SearchActivity.BUNDLE_SPINE_SIZE, spine?.size ?: 0)
-            intent.putExtra(SearchActivity.BUNDLE_SEARCH_URI, searchUri)
-            intent.putExtra(SearchAdapter.DATA_BUNDLE, searchAdapterDataBundle)
-            intent.putExtra(SearchActivity.BUNDLE_SAVE_SEARCH_QUERY, searchQuery)
-            startActivityForResult(intent, RequestCode.SEARCH.value)
+//            val intent = Intent(this, SearchActivity::class.java)
+//            intent.putExtra(SearchActivity.BUNDLE_SPINE_SIZE, spine?.size ?: 0)
+//            intent.putExtra(SearchActivity.BUNDLE_SEARCH_URI, searchUri)
+//            intent.putExtra(SearchAdapter.DATA_BUNDLE, searchAdapterDataBundle)
+//            intent.putExtra(SearchActivity.BUNDLE_SAVE_SEARCH_QUERY, searchQuery)
+//            startActivityForResult(intent, RequestCode.SEARCH.value)
             return true
 
-        } else if (itemId == R.id.itemConfig) {
+        } */ else if (itemId == R.id.itemConfig) {
             Log.v(LOG_TAG, "-> onOptionsItemSelected -> " + item.title)
             showConfigBottomSheetDialogFragment()
             return true
