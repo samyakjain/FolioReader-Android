@@ -72,10 +72,10 @@ class ConfigBottomSheetDialogFragment : BottomSheetDialogFragment() {
 
     private fun initViews() {
         inflateView()
-        configFonts()
+//        configFonts()
         view_config_font_size_seek_bar.progress = config.fontSize
         configSeekBar()
-        selectFont(config.font, false)
+//        selectFont(config.font, false)
         isNightMode = config.isNightMode
         if (isNightMode) {
             container.setBackgroundColor(ContextCompat.getColor(context!!, R.color.night))
@@ -159,15 +159,15 @@ class ConfigBottomSheetDialogFragment : BottomSheetDialogFragment() {
         )
         buttonVertical.setTextColor(colorStateList)
         buttonHorizontal.setTextColor(colorStateList)
-        view_config_font_andada.setTextColor(colorStateList)
-        view_config_font_lato.setTextColor(colorStateList)
-        view_config_font_lora.setTextColor(colorStateList)
-        view_config_font_raleway.setTextColor(colorStateList)
-
-        view_config_font_andada.setOnClickListener { selectFont(Constants.FONT_ANDADA, true) }
-        view_config_font_lato.setOnClickListener { selectFont(Constants.FONT_LATO, true) }
-        view_config_font_lora.setOnClickListener { selectFont(Constants.FONT_LORA, true) }
-        view_config_font_raleway.setOnClickListener { selectFont(Constants.FONT_RALEWAY, true) }
+//        view_config_font_andada.setTextColor(colorStateList)
+//        view_config_font_lato.setTextColor(colorStateList)
+//        view_config_font_lora.setTextColor(colorStateList)
+//        view_config_font_raleway.setTextColor(colorStateList)
+//
+//        view_config_font_andada.setOnClickListener { selectFont(Constants.FONT_ANDADA, true) }
+//        view_config_font_lato.setOnClickListener { selectFont(Constants.FONT_LATO, true) }
+//        view_config_font_lora.setOnClickListener { selectFont(Constants.FONT_LORA, true) }
+//        view_config_font_raleway.setOnClickListener { selectFont(Constants.FONT_RALEWAY, true) }
     }
 
     private fun selectFont(selectedFont: Int, isReloadNeeded: Boolean) {
@@ -185,10 +185,10 @@ class ConfigBottomSheetDialogFragment : BottomSheetDialogFragment() {
     }
 
     private fun setSelectedFont(andada: Boolean, lato: Boolean, lora: Boolean, raleway: Boolean) {
-        view_config_font_andada.isSelected = andada
-        view_config_font_lato.isSelected = lato
-        view_config_font_lora.isSelected = lora
-        view_config_font_raleway.isSelected = raleway
+//        view_config_font_andada.isSelected = andada
+//        view_config_font_lato.isSelected = lato
+//        view_config_font_lora.isSelected = lora
+//        view_config_font_raleway.isSelected = raleway
     }
 
     private fun toggleBlackTheme() {
