@@ -362,7 +362,7 @@ class FolioActivity : AppCompatActivity(), FolioActivityCallback, MediaControlle
         menuInflater.inflate(R.menu.menu_main, menu)
 
         val config = AppUtil.getSavedConfig(applicationContext)!!
-//        UiUtil.setColorIntToDrawable(config.themeColor, menu.findItem(R.id.itemSearch).icon)
+    //        UiUtil.setColorIntToDrawable(config.themeColor, menu.findItem(R.id.itemSearch).icon)
         UiUtil.setColorIntToDrawable(config.themeColor, menu.findItem(R.id.itemConfig).icon)
         UiUtil.setColorIntToDrawable(config.themeColor, menu.findItem(R.id.itemTts).icon)
 

@@ -48,10 +48,10 @@ public class UiUtil {
 
     public static void setCustomFont(View view, Context ctx, AttributeSet attrs,
                                      int[] attributeSet, int fontId) {
-        TypedArray a = ctx.obtainStyledAttributes(attrs, attributeSet);
-        String customFont = a.getString(fontId);
-        setCustomFont(view, ctx, customFont);
-        a.recycle();
+//        TypedArray a = ctx.obtainStyledAttributes(attrs, attributeSet);
+//        String customFont = a.getString(fontId);
+//        setCustomFont(view, ctx, customFont);
+//        a.recycle();
     }
 
     public static boolean setCustomFont(View view, Context ctx, String asset) {
